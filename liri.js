@@ -11,7 +11,7 @@ var command = process.argv[2];
 var searchArgs = process.argv;
 var search = "";
 //loop to get all of the words in the title, artist, etc the user searches 
-for (let i = 3; i < searchArgs.length; i++) {
+for (var i = 3; i < searchArgs.length; i++) {
   if (i > 3 && i < searchArgs.length) {
     search = search + "+" + searchArgs[i];
   } else {
