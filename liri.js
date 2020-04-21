@@ -144,7 +144,7 @@ function doWhatItSays() {
     var dataArr = data.split(',');
     // console.log(dataArr[0], dataArr[1]);
     // console.log(dataArr[0], dataArr[1].replace(/['"]+/g, ''));
-    runLiri(dataArr[0], dataArr[1].replace(/['"]+/g, ''));
+    runLiri(dataArr[0], dataArr[1]);
   });
 }
 
