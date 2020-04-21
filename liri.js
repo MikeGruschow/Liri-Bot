@@ -46,8 +46,6 @@ function movieThis(search) {
   axios.get(movieQueryURL).then(
     function(response) {
       if (response.data.Response === "False") {
-        console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
-        console.log("It's on Netflix!");
       } else {
         console.log("--------------------------------------------------------------------------------");
         console.log("Title: " + response.data.Title);
@@ -142,8 +140,6 @@ function doWhatItSays() {
       return console.log(error);
     }
     var dataArr = data.split(',');
-    // console.log(dataArr[0], dataArr[1]);
-    // console.log(dataArr[0], dataArr[1].replace(/['"]+/g, ''));
     runLiri(dataArr[0], dataArr[1]);
   });
 }
